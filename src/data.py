@@ -20,7 +20,6 @@ class Params:
             'offset': offset,
             'fields': 'members.id,members.email_address,members.status,members.merge_fields,total_items'}
         if (since_timestamp):
-            params['since_timestamp_opt'] = since_timestamp
             params['since_last_changed'] = since_timestamp
 
         return params
